@@ -101,6 +101,7 @@ public class CaseController {
                         response = client.newCall(request).execute();
                     } catch (IOException e) {
                     }
+                    Boolean
                     response.body().close();
                     acknowledgment.acknowledge();
                     latch.countDown();
